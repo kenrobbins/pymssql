@@ -31,6 +31,9 @@ DEF MSSQLDB_MSGSIZE = 1024
 DEF PYMSSQL_MSGSIZE = (MSSQLDB_MSGSIZE * 8)
 DEF EXCOMM = 9
 
+# Provide constant missing from FreeTDS 0.91 so that we can build against it
+DEF DBVERSION_73 = 7
+
 ROW_FORMAT_TUPLE = 1
 ROW_FORMAT_DICT = 2
 
